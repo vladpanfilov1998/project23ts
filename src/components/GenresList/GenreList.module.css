@@ -1,0 +1,12 @@
+.genrelist {
+    display: flex;
+    column-gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #9e9ca7;
+}
+
+@media screen and (max-width: 780px) {
+    .genrelist {
+        justify-content: center;
+    }
+}

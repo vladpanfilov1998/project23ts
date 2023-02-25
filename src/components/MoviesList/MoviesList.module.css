@@ -1,0 +1,45 @@
+.movies {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    grid-template-rows: auto;
+    gap: 20px;;
+}
+.pages{
+    display: flex;
+    column-gap: 5px;
+    justify-content: center;
+}
+.prevnext button{
+    background-color: unset;
+    color:#9e9ca7;
+    font-size: 16px;
+    font-weight: bold;
+}
+.wrapdarked .prevnext button{
+    color: #fff;
+}
+.prevnext:hover button{
+    color: #2a3356;
+    background-color: unset;
+
+}
+
+@media screen and (max-width: 1700px) {
+    .movies{
+        grid-template-columns: repeat(3, minmax(50px, 1fr));
+    }
+}
+@media screen and (max-width: 1199px) {
+    .movies{
+        grid-template-columns: repeat(2, minmax(50px, 1fr));
+    }
+}
+@media screen and (max-width: 780px) {
+    .movies {
+        grid-template-columns: repeat(1, minmax(50px, 1fr));
+    }
+    .pages{
+
+        justify-content: center;
+    }
+}

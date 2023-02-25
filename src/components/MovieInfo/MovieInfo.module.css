@@ -1,0 +1,33 @@
+.movieinfo {
+    display: flex;
+    gap: 15px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+    .movieinfo img {
+        width: 500px;
+    }
+    .movieinfo div{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .movieinfo img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .movieinfo {
+        flex-direction: column;
+        align-items: center;
+    }
+}
